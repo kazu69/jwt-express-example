@@ -1,0 +1,31 @@
+{
+  "name": "jwt-node-express",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "sequelize": "$(npm bin)/sequelize",
+    "migrate": "$(npm bin)/sequelize db:migrate",
+    "seeds": "$(npm bin)/sequelize db:seed:all",
+    "test": "$(npm bin)/mocha test/",
+    "start": "node app/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.6",
+    "moment": "^2.14.1",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.23.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.0",
+    "sequelize-cli": "^2.4.0",
+    "should": "^10.0.0",
+    "supertest": "^2.0.0"
+  }
+}
